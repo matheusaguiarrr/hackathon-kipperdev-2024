@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('chamados', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('cliente_id');
             $table->unsignedBigInteger('voluntario_id');
             $table->string('status')->default('em aberto');
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('voluntario_id')->references('id')->on('voluntarios');
+            $table->foreign('cliente_id')->references('id')->on('users');
+            $table->foreign('voluntario_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

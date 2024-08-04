@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('enderecos', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id')->nullable();
-            $table->unsignedBigInteger('voluntario_id')->nullable();
             $table->string("cep");
             $table->string("estado", 2);
             $table->string("cidade", 100);
@@ -23,7 +22,6 @@ return new class extends Migration
             $table->string("numero", 10);
             $table->string("complemento", 100)->nullable();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('voluntario_id')->references('id')->on('voluntarios');
             $table->timestamps();
         });
     }
