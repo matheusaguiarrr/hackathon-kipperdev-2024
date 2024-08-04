@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Voluntario;
 use Illuminate\Http\Request;
 
 class VoluntarioController extends Controller
@@ -11,7 +12,8 @@ class VoluntarioController extends Controller
      */
     public function index()
     {
-        //
+        $data = Voluntario::all();
+        return response()->json($data, 200);
     }
 
     /**
@@ -19,7 +21,8 @@ class VoluntarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = Voluntario::create($request->all());
+        return response()->json($data, 201);
     }
 
     /**
@@ -33,16 +36,18 @@ class VoluntarioController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Voluntario $voluntario)
     {
-        //
+        $voluntario->update($request->all());
+        return response()->json($voluntario, 200);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Voluntario $voluntario)
     {
-        //
+        $voluntario->delete();
+        return response()->json(['message' => 'sucess delete'], 200);
     }
 }

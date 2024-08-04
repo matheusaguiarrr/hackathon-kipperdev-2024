@@ -29,6 +29,7 @@ class UserController extends Controller
 
     /**
      * Display the specified resource.
+     * Endepoint GET: api/users/{id}
      */
     public function show(string $id)
     {
@@ -38,17 +39,21 @@ class UserController extends Controller
 
     /**
      * Update the specified resource in storage.
+     * Endepoint PUT/PATCH: api/users/{user}
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, User $user)
     {
-        //
+        $user->update($request->all());
+        return response()->json($user, 200);
     }
 
     /**
      * Remove the specified resource from storage.
+     * Endepoint DELETE: api/users/{user}
      */
-    public function destroy(string $id)
+    public function destroy(User $user)
     {
-        //
+        $user->delete();
+        return response()->json(['message' => 'sucess delete'], 200);
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Item;
 use Illuminate\Http\Request;
 
 class ItemController extends Controller
@@ -11,7 +12,8 @@ class ItemController extends Controller
      */
     public function index()
     {
-        //
+        $data = Item::all();
+        return response()->json($data, 200);
     }
 
     /**
@@ -19,30 +21,34 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = Item::create($request->all());
+        return response()->json($data, 201);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Item $item)
     {
-        //
+        $item->find($item->chamado_id);
+        return response()->json($item, 200);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Item $item)
     {
-        //
+        $item->update($request->all());
+        return response()->json($item, 200);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Item $item)
     {
-        //
+        $item->delete();
+        return response()->json(['message' => 'sucess delete'], 200);
     }
 }

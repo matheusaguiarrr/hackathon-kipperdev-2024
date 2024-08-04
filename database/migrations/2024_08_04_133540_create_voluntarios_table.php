@@ -20,6 +20,7 @@ return new class extends Migration
             $table->rememberToken();
             $table->string('sobrenome');
             $table->string('telefone');
+            //CNPJ e unico
             $table->string('cpf');
             $table->timestamps();
         });
