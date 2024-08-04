@@ -46,3 +46,58 @@ class ChamadoController extends Controller
         //
     }
 }
+
+
+/*
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Requests\CategoryStoreRequest;
+use App\Http\Requests\CategoryUpdateRequest;
+use App\Services\CategoryServices;
+use Illuminate\Http\JsonResponse;
+
+class CategoryController extends Controller
+{
+
+    public function __construct(protected CategoryServices $categoryServices) {
+    }
+
+    public function index(): JsonResponse
+    {
+        $data = $this->categoryServices->list();
+
+        return response()->json($data);
+    }
+
+    public function store(CategoryStoreRequest $request): JsonResponse
+    {
+        $data = $this->categoryServices->create($request);
+
+        return response()->json($data, 201);
+    }
+
+    public function update(CategoryUpdateRequest $request, string $id): JsonResponse
+    {
+        $data = $this->categoryServices->update($request, $id);
+
+        return response()->json($data);
+    }
+
+    public function show(string $id): JsonResponse
+    {
+        $data = $this->categoryServices->findById($id);
+
+        return response()->json($data);
+    }
+
+    public function destroy(string $id)
+    {
+        $this->categoryServices->delete($id);
+
+        return response()->json(null, 204);
+    }
+
+}
+*/
