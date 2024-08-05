@@ -1,66 +1,93 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1 style="font-weight: bold;">🖥️ Hackathon-KipperDev-2024 🛠️ </h1>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![background-gh](https://github.com/user-attachments/assets/015d259e-2379-468f-b316-66af5f969a53)
 
-## About Laravel
+<h2 id="desafio">🎯 O desafio</h2>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h2>"Tecnologia Contra Crises Climáticas: Soluções para Cidades Resilientes"</h2>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<h4>Descrição</h4>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+As crises climáticas, como enchentes e calores extremos, são um problema recorrente que afeta muitas cidades, causando danos materiais, interrompendo serviços essenciais e colocando vidas em risco. O desafio deste Hackathon é desenvolver soluções tecnológicas que ajudem as cidades a prevenir, gerenciar e mitigar os impactos dessas crises.
 
-## Learning Laravel
+<h4>Objetivo</h4>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Cada equipe deveria criar ou idealizar uma aplicação, sistema ou serviço que utilize as tecnologias que preferirem para enfrentar os desafios impostos pelas crises climáticas, promovendo a resiliência urbana, rápida recuperação das cidades e a segurança dos cidadãos.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<h2 id="executando">🚀 Executando o projeto na sua máquina local</h2>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<h3>Pré-Requisitos</h3>
 
-## Laravel Sponsors
+- [Git](https://git-scm.com/)
+- [PHP 8](https://getcomposer.org/)
+- [MySQL](https://dev.mysql.com/downloads/installer/)
+- [Composer](https://getcomposer.org/)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+<h3>Clonando o projeto</h3>
 
-### Premium Partners
+No terminal digite o seguinte comando
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+```bash
+git clone https://github.com/matheusaguiarrr/hackathon-kipperdev-2024.git
+```
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<h3>Conectando o Banco de Dados</h3>
 
-## Code of Conduct
+- Crie um banco de dados
+- Dentro da pasta do projeto, crie um arquivo env.ini
+- Copie tudo do arquivo env.example
+- Preencha as seguintes variáveis
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<img src="https://github.com/user-attachments/assets/ec699064-e74d-4266-8248-9422ba414ee4" height=250 width=300>
 
-## Security Vulnerabilities
+<h3>Criando as tabelas do banco</h3>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- No terminal, dentro da pasta do projeto execute o seguinte comando
+```bash
+php artisan migrate
+```
 
-## License
+<h2 id="colab">🤝 Contribuidores</h2>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/106553412?v=4" width="100px;" alt="Fernanda Kipper Profile Picture"/><br>
+        <sub>
+          <b>Matheus Aguiar</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/116321960?v=4" width="100px;" alt="Cleber Junior Profile Picture"/><br>
+        <sub>
+          <b>Cleber Junior</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/101760004?v=4" width="100px;" alt="Luigi Loeck Profile Picture"/><br>
+        <sub>
+          <b>Luigi Loeck</b>
+        </sub>
+      </a>
+    </td>
+      <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/176450008?v=4" width="100px;" alt="Miguel Grequi Profile Picture"/><br>
+        <sub>
+          <b>Miguel Grequi</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<h2 id="licenca">📝 Licença</h2>
+
+Este projeto está sob a licença [MIT](LICENSE) license
+
