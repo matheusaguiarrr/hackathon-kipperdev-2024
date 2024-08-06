@@ -14,6 +14,17 @@ As crises climáticas, como enchentes e calores extremos, são um problema recor
 
 Cada equipe deveria criar ou idealizar uma aplicação, sistema ou serviço que utilize as tecnologias que preferirem para enfrentar os desafios impostos pelas crises climáticas, promovendo a resiliência urbana, rápida recuperação das cidades e a segurança dos cidadãos.
 
+<h2 id="proposta">📑 Proposta</h2>
+<p>AmigoRenova, uma alternativa para auxiliar pessoas que sofreram perdas oriundas de eventos climáticos a obterem ajuda qualificada para auxiliar no processo de renovação das áreas impactadas. Seja através do conserto de um computador ou na renovação de uma parede com infiltração, o AmigoRenova conecta vítimas a empresas e microempreendedores que procuram dar de volta para a comunidade ao oferecerem seus serviços de forma voluntária e gratuita. Ajudando a construir um futuro na nova ordem climática mundial, todos trabalhamos juntos contra o inimigo em comum da extinção.</p>
+<p><a href="https://docs.google.com/document/d/1_F1Wt9DwnyqUwDXvWiMhuEBXiNz6Bl532SmIFvEayxE/edit#heading=h.z6ne0og04bp5">Proposta detalhada</a></p>
+
+<h2 id="wireframe">📏 Wireframe</h2>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/bfff682c-5323-482c-b103-8d68afecd48f" alt="Image Example" height="500px" width="900px">
+    <img src="https://github.com/user-attachments/assets/144adceb-f635-42f1-afe2-29b07f40a57d" alt="Image Example" height="500px" width="900px">
+</p>
+<p align="center"><a href="https://www.figma.com/design/ZpMvDGd4rXEzLFW4Sfb1mq/Hackathon?node-id=0-1&t=gg7bxvFi6tNT7DEy-0">Figma</a></p>
+
 <h2 id="executando">🚀 Executando o projeto na sua máquina local</h2>
 
 <h3>Pré-Requisitos</h3>
@@ -86,6 +97,8 @@ php artisan migrate
     </td>
   </tr>
 </table>
+
+[📱 Repositório do APP](https://github.com/LuigiLoeck/AmigoRenova)
 
 <h2 id="licenca">📝 Licença</h2>
 
