@@ -46,8 +46,8 @@ git clone https://github.com/matheusaguiarrr/hackathon-kipperdev-2024.git
 <h3>Conectando o Banco de Dados</h3>
 
 - Crie um banco de dados
-- Dentro da pasta do projeto, crie um arquivo env.ini
-- Copie tudo do arquivo env.example
+- Dentro da pasta do projeto, crie um arquivo .env
+- Copie tudo do arquivo .env.example
 - Preencha as seguintes variáveis
 
 <img src="https://github.com/user-attachments/assets/ec699064-e74d-4266-8248-9422ba414ee4" height=250 width=300>
